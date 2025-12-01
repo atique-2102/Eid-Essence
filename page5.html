@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Essence | Fancy Kurta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .font-arial { font-family: Arial, sans-serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+        .bg-cream { background-color: #FFF7EB; }
+        .text-green { color: #0B6B3A; }
+        .bg-green { background-color: #0B6B3A; }
+        .text-gold { color: #D4AF37; }
+        .bg-gold { background-color: #D4AF37; }
+        input[type="checkbox"]:checked { accent-color: #0B6B3A; }
+    </style>
+</head>
+<body class="bg-cream font-arial flex flex-col min-h-screen text-[#333]">
+
+    <!-- NAVIGATION -->
+    <nav class="h-20 bg-white w-full sticky top-0 z-50 shadow-sm">
+        <div class="max-w-[1440px] mx-auto h-full px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2 cursor-pointer">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M2 10C2 10 5 5 9 5C13 5 16 10 16 10" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <a href="index.html" class="font-arial font-bold text-[24px] text-green tracking-wide">Eid Essence</a>
+            </div>
+            <div class="hidden md:flex space-x-12 text-[16px] text-[#333]">
+                <a href="index.html" class="hover:text-green transition">Home</a>
+                <a href="men.html" class="font-bold border-b-2 border-gold text-green">Men</a>
+                <a href="women.html" class="hover:text-green transition">Women</a>
+                <a href="#" class="hover:text-green transition">Gifts</a>
+            </div>
+            <div class="flex items-center space-x-6">
+                <div class="hidden md:flex items-center bg-[#F5F5F5] rounded px-4 w-[250px] h-[40px]">
+                    <input type="text" placeholder="Search..." class="bg-transparent border-none outline-none text-[14px] w-full text-[#999]">
+                </div>
+                <a href="login.html" class="w-8 h-8 rounded-full border-2 border-[#333] flex items-center justify-center hover:bg-gray-100 transition"><i data-lucide="user" class="w-4 h-4 text-[#333]"></i></a>
+                <a href="#" class="w-8 h-8 rounded-full border-2 border-[#333] flex items-center justify-center hover:bg-gray-100 transition"><i data-lucide="shopping-cart" class="w-4 h-4 text-[#333]"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <div class="max-w-[1440px] mx-auto px-6 py-6 text-[14px] text-[#666]">
+        <a href="index.html" class="hover:underline">Home</a> <span class="mx-1">></span> 
+        <a href="men.html" class="hover:underline">Men</a> <span class="mx-1">></span> 
+        <span class="text-green font-bold">Fancy Kurta</span>
+    </div>
+
+    <!-- PRODUCT DETAILS -->
+    <div class="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 pb-20">
+        <div class="h-[600px] bg-white border border-[#E5E5E5] rounded-lg"></div>
+        <div class="pt-8 flex flex-col">
+            <h1 class="font-inter font-bold text-[48px] text-green mb-2">Fancy Kurta</h1>
+            <p class="text-[32px] text-gold font-bold mb-6">PKR 3,500</p>
+            <p class="text-[#333] mb-10 text-[18px]">Premium cotton blend with hand-stitched gold embroidery. Perfect for Eid prayers and family gatherings.</p>
+
+            <div class="mb-10">
+                <p class="font-bold text-[14px] mb-4 tracking-wide text-[#333]">SIZE</p>
+                <div class="flex gap-4">
+                    <button class="w-12 h-12 border border-[#999] text-[#666] flex items-center justify-center hover:border-green hover:text-green transition rounded">S</button>
+                    <button class="w-12 h-12 border border-green bg-green text-white flex items-center justify-center rounded font-bold shadow-md">M</button>
+                    <button class="w-12 h-12 border border-[#999] text-[#666] flex items-center justify-center hover:border-green hover:text-green transition rounded">XL</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 mb-10 border border-[#E5E5E5] rounded-lg">
+                <p class="font-bold text-green mb-4 text-[18px]">Make it a Gift Box?</p>
+                <div class="space-y-4">
+                    <label class="flex justify-between items-center cursor-pointer">
+                        <span class="text-[#333]">Add Envelope</span>
+                        <div class="flex items-center gap-3">
+                            <span class="text-[14px] text-[#999]">(+PKR 100)</span>
+                            <input type="checkbox" class="w-5 h-5">
+                        </div>
+                    </label>
+                    <div class="border-t border-[#F5F5F5]"></div>
+                    <label class="flex justify-between items-center cursor-pointer">
+                        <span class="text-[#333]">Add Chocolates</span>
+                        <div class="flex items-center gap-3">
+                            <span class="text-[14px] text-[#999]">(+PKR 500)</span>
+                            <input type="checkbox" class="w-5 h-5">
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <button class="w-full bg-green text-white py-4 font-bold text-[18px] tracking-widest hover:bg-opacity-90 transition shadow-lg rounded">ADD TO CART</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-green w-full py-12 mt-auto">
+        <div class="max-w-[1440px] mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-white">
+            <div>
+                <h3 class="font-arial font-bold text-[24px] mb-2">Eid Essence</h3>
+                <p class="font-arial text-[14px] text-gold">Tradition meets elegance.</p>
+            </div>
+            <div>
+                <h4 class="font-arial font-bold text-[18px] mb-4">Shop</h4>
+                <ul class="space-y-2 text-[14px] text-[#EEE]">
+                    <li><a href="men.html" class="hover:text-gold transition">Men's Collection</a></li>
+                    <li><a href="women.html" class="hover:text-gold transition">Women's Collection</a></li>
+                    <li><a href="#" class="hover:text-gold transition">Gift Boxes</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-arial font-bold text-[18px] mb-4">Help</h4>
+                <ul class="space-y-2 text-[14px] text-[#EEE]">
+                    <li><a href="#" class="hover:text-gold transition">Shipping Info</a></li>
+                    <li><a href="#" class="hover:text-gold transition">Returns</a></li>
+                    <li><a href="#" class="hover:text-gold transition">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-[1440px] mx-auto px-6 mt-12 pt-6 border-t border-white/20">
+            <p class="font-arial text-[14px] text-white">© 2025 Eid Essence.</p>
+        </div>
+    </footer>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
